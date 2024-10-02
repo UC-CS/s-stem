@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background for the page */
+    color: #000; /* Black text color */
+}
+
+header {
+    background-color: #000; /* Black background for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically align the logo and text */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.school-logo {
+    max-width: 300px; /* Increase logo size */
+    height: auto;
+    margin-right: 20px; /* Space between the logo and title */
+}
+
+h1 {
+    font-size: 24px; /* Keep the title font size smaller */
+    color: white; /* White text for the title */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey for section background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+}
+
+h2 {
+    color: #000; /* Black for section headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eaeaea; /* Lighter grey for list items */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000; /* Black background for the footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
