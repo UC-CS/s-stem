@@ -7,71 +7,64 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- Header with Logo and Nav Bar -->
     <header>
         <div class="header-content">
             <img src="img/school_logo.png" alt="School Logo" class="school-logo">
-            <h1>UC Computer Science S-STEM Project </h1>
+            <h1>UC Computer Science S-STEM Project</h1>
+            <img src="img/nsf_logo.jpeg" alt="NSF Logo" class="nsf-logo">
         </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#introduction" onclick="showSection('introduction')">Introduction</a></li>
+                <li><a href="#schedule" onclick="showSection('schedule')">Event Schedule</a></li>
+                <li><a href="#team" onclick="showSection('team')">Team Members</a></li>
+                <li><a href="#scholars" onclick="showSection('scholars')">Scholars</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <!-- Introduction Section -->
     <section id="introduction">
         <h2>Introduction</h2>
         <p>The <strong>Southwest Ohio Scholars Program (SOSP)</strong>, part of the National Science Foundation's <strong>Scholarships in Science, Technology, Engineering, and Mathematics (S-STEM)</strong> initiative, is designed to support and empower low-income undergraduate students pursuing <strong>Computer Science (CS)</strong> degrees at the University of Cincinnati. Through a combination of financial scholarships, academic support, and hands-on industry experience via the university’s co-op program, the SOSP aims to increase retention and graduation rates among its scholars. Over a five-year period, the program will provide scholarships to 36 students across multiple cohorts, helping them complete their degrees and enter the workforce. By fostering a culture of belonging and involving students’ families in their educational journey, the SOSP hopes to develop the next generation of diverse, talented computer scientists to meet the growing demand for technology professionals in Ohio.</p>
     </section>
 
-    <section id="schedule">
+    <!-- Event Schedule Section -->
+    <section id="schedule" style="display:none;">
         <h2>Event Schedule</h2>
-        <div class="event-schedule">
-            <ul>
-                <li><strong>Financial Workshop:</strong> <span>Fall, Year 1</span></li>
-                <li><strong>Kickoff Meeting:</strong> <span>Fall, Year 1</span></li>
-                <li><strong>Living-Learning Communities:</strong> <span>Fall, Year 1</span></li>
-                <li><strong>Family Night:</strong> <span>Fall, Year 1</span></li>
-                <li><strong>Family Orientation:</strong> <span>Fall, Year 1</span></li>
-                <li><strong>Developing Good Habits and a Growth Mindset for College Success:</strong> <span>Spring, Year 1</span></li>
-                <li><strong>Skill Set Development Roadmap:</strong> <span>Fall, Year 1</span></li>
-                <li><strong>Interview Prep (Coding, System Design, Behavioral):</strong> <span>Fall - Spring, Year 1</span></li>
-                <li><strong>Tech Stack Introduction (Backend, Frontend, AI Frameworks, Cloud, etc.):</strong> <span>Fall - Spring, Year 1</span></li>
-                <li><strong>Co-op 1 to 5:</strong> <span>Throughout Years 1 to 5</span></li>
-                <li><strong>Industry-sponsored Senior Design Project:</strong> <span>Year 4</span></li>
-                <li><strong>Career Tips:</strong> <span>Year 1</span></li>
-                <li><strong>Faculty and Peer Mentoring:</strong> <span>Ongoing from Years 1 to 5</span></li>
-                <li><strong>Student Milestone Monitoring and Mentoring:</strong> <span>Ongoing from Years 1 to 5</span></li>
-                <li><strong>Summer Bridge:</strong> <span>Summer, Year 1</span></li>
-                <li><strong>Tutoring:</strong> <span>Ongoing from Years 1 to 5</span></li>
-                <li><strong>Research Experience:</strong> <span>Years 4 to 5</span></li>
-            </ul>
-        </div>
-        <!-- Image insertion -->
         <div class="schedule-image">
             <img src="img/event_schedule.png" alt="Event Schedule Image">
         </div>
     </section>
 
-    <section id="team">
+    <section id="team" style="display:none;">
         <h2>Project Team Members</h2>
-        <div class="team-member">
-            <p><strong>Becky Barkema</strong><br>
-            Program Manager, CEAS<br>
-            <a href="mailto:BARKEMR@ucmail.uc.edu">BARKEMR@ucmail.uc.edu</a></p>
-        </div>
-    
-        <div class="team-member">
-            <p><strong>David McGlynn</strong><br>
-            Administrative Director, Office of the Dean and Director, Marketing and Communications, CEAS<br>
-            <a href="mailto:mcglyndm@ucmail.uc.edu">mcglyndm@ucmail.uc.edu</a></p>
-        </div>
     
         <div class="team-member">
             <p><strong>Dr. Justin Z. Zhan</strong><br>
-            Head of CS Department, CEAS<br>
-            <a href="mailto:justin.zhan@uc.edu">justin.zhan@uc.edu</a></p>
+            <strong>Principal Investigator (PI)</strong>, Head of CS Department, CEAS<br>
+            <a href="mailto:justin.zhan@ucmail.uc.edu">justin.zhan@ucmail.uc.edu</a></p>
         </div>
     
         <div class="team-member">
             <p><strong>Dr. Youn Seon Lim</strong><br>
-            Assistant Professor of Psychometrics/Educational Measurements and Statistics, College of Education, Criminal Justice & Human Services<br>
+            <strong>Co-Principal Investigator (Co-PI)</strong>, Assistant Professor of Psychometrics/Educational Measurements and Statistics, College of Education, Criminal Justice & Human Services<br>
             <a href="mailto:limyo@ucmail.uc.edu">limyo@ucmail.uc.edu</a></p>
+        </div>
+    
+        <div class="team-member">
+            <p><strong>Whitney B. Gaskins</strong><br>
+            <strong>Co-Principal Investigator (Co-PI)</strong>, Assistant Dean and Assistant Professor, Office of Inclusive Excellence & Community Engagement<br>
+            <a href="mailto:gaskinwb@ucmail.uc.edu">gaskinwb@ucmail.uc.edu</a></p>
+        </div>
+    
+        <div class="team-member">
+            <p><strong>Sonya Michele Turner</strong><br>
+            Associate Director of the UC Evaluation Services Center<br>
+            <a href="mailto:turnes9@ucmail.uc.edu">turnes9@ucmail.uc.edu</a></p>
         </div>
     
         <div class="team-member">
@@ -81,25 +74,21 @@
         </div>
     
         <div class="team-member">
+            <p><strong>Becky Barkema</strong><br>
+            Program Manager, CEAS<br>
+            <a href="mailto:barkemr@ucmail.uc.edu">barkemr@ucmail.uc.edu</a></p>
+        </div>
+    
+        <!-- Yang Lu as Project Coordinator -->
+        <div class="team-member">
             <p><strong>Yang Lu</strong><br>
-            PhD Student in CS, Project Coordinator, CEAS<br>
+            <strong>S-Stem Project Coordinator</strong>, CEAS<br>
             <a href="mailto:lu2y4@mail.uc.edu">lu2y4@mail.uc.edu</a></p>
-        </div>
-    
-        <div class="team-member">
-            <p><strong>Whitney B. Gaskins</strong><br>
-            Assistant Dean and Assistant Professor, Office of Inclusive Excellence & Community Engagement<br>
-            <a href="mailto:gaskinwb@ucmail.uc.edu">gaskinwb@ucmail.uc.edu</a></p>
-        </div>
-    
-        <div class="team-member">
-            <p><strong>Sonya Michele Turner</strong><br>
-            Associate Director of the UC Evaluation Services Center<br>
-            <a href="mailto:turnes9@ucmail.uc.edu">turnes9@ucmail.uc.edu</a></p>
         </div>
     </section>
 
-    <section id="scholars">
+    <!-- S-STEM Scholars Section -->
+    <section id="scholars" style="display:none;">
         <h2>S-STEM Scholars</h2>
         <ul>
             <li>Angelie K Chen - <a href="mailto:chenak@mail.uc.edu">chenak@mail.uc.edu</a></li>
@@ -117,20 +106,12 @@
         </ul>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" style="display:none;">
         <h2>Contact Us</h2>
-        <p>If you have any questions, please reach out to:</p>
         <ul>
-            <li>
-                <a href="https://researchdirectory.uc.edu/p/zhanjt" target="_blank">Prof. Justin Zhan</a>: 
-                Fred A. & Juliet Esselborn Geier Chair Professor and Department Head<br>
-                Email: <a href="mailto:zhanjt@ucmail.uc.edu">zhanjt@ucmail.uc.edu</a>
-            </li>
-            <li>
-                <a href="https://yangdudulu.github.io/" target="_blank">Yang Lu</a>: 
-                PhD in Computer Science<br>
-                Email: <a href="mailto:lu2y4@ucmail.uc.edu">lu2y4@ucmail.uc.edu</a>
-            </li>
+            <li><a href="https://researchdirectory.uc.edu/p/zhanjt" target="_blank">Prof. Justin Zhan</a>: Fred A. & Juliet Esselborn Geier Chair Professor and Department Head<br>Email: <a href="mailto:zhanjt@ucmail.uc.edu">zhanjt@ucmail.uc.edu</a></li>
+            <li><a  target="_blank">Yang Lu</a>: S-Stem Project Coordinator<br>Email: <a href="mailto:lu2y4@ucmail.uc.edu">lu2y4@ucmail.uc.edu</a></li>
         </ul>
     </section>
 
@@ -138,6 +119,18 @@
         <p>&copy; 2024 S-STEM Project | University of Cincinnati</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            let sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the clicked section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
 </body>
 </html>
