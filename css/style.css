@@ -141,3 +141,121 @@ nav ul.navbar li a:hover {
     display: block; /* Remove inline spacing */
     margin: 0 auto; /* Center the image */
 }
+
+/* Contact Section Styling */
+#contact {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit the width of the section */
+    margin: 40px auto; /* Center the section horizontally */
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between each contact entry */
+}
+
+.contact-info div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #007bff; /* Standard blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Scholars Section Styling */
+#scholars {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit the width of the section */
+    margin: 40px auto; /* Center the section horizontally */
+}
+
+#scholars h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+}
+
+.scholar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add space between each scholar */
+}
+
+.scholar-list li {
+    background-color: #f1f1f1; /* Light grey background */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for each entry */
+    list-style-type: none;
+}
+
+.scholar-list a {
+    color: #007bff; /* Standard blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.scholar-list a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Project Team Members Section Styling */
+#team {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 900px; /* Limit the width of the section */
+    margin: 40px auto; /* Center the section horizontally */
+}
+
+#team h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+}
+
+.team-member {
+    margin-bottom: 25px; /* Add space between each team member */
+}
+
+.team-member p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.team-member a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-member a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
