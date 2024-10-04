@@ -1,3 +1,4 @@
+/* Body background */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #000; /* Black text color */
 }
 
+/* Header Styling */
 header {
     background-color: #000; /* Black background for the header */
     color: white;
@@ -15,19 +17,27 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center; /* Vertically align the logo and text */
-    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
 }
 
 .school-logo {
-    max-width: 300px; /* Increase logo size */
+    max-width: 700px;
     height: auto;
-    margin-right: 20px; /* Space between the logo and title */
+    margin-right: 20px;
+}
+
+.nsf-logo {
+    max-width: 100px; /* Set the max width for the NSF logo */
+    height: auto;
+    margin-left: 20px; /* Add some spacing between the text and the logo */
+    margin-bottom: 5px; /* Add larger bottom margin */
 }
 
 h1 {
-    font-size: 24px; /* Keep the title font size smaller */
-    color: white; /* White text for the title */
+    font-size: 24px;
+    color: white;
+    margin: 0 20px; /* Add margin to both sides of the text */
 }
 
 section {
@@ -37,6 +47,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
 }
+
 #team {
     margin: 20px;
     padding: 20px;
@@ -91,4 +102,42 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Navigation Bar Styling */
+nav ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Match the navbar background with the body */
+    display: flex;
+    justify-content: space-between; /* Spread items evenly across the width */
+    width: 100%;
+    padding: 0 10px;
+    border-bottom: 1px solid #ddd; /* Optional: add a subtle border to separate the nav from the rest of the page */
+}
+
+nav ul.navbar li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul.navbar li a {
+    display: block;
+    color: #000; /* Black text */
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold; /* Bold the nav bar text */
+}
+
+nav ul.navbar li a:hover {
+    background-color: #f4f4f4; /* Light grey hover effect */
+}
+
+.schedule-image img {
+    width: 98%; /* Set the width to 98% */
+    height: auto; /* Automatically scale height to maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    margin: 0 auto; /* Center the image */
 }
