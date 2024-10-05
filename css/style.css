@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background for the page */
-    color: #000; /* Black text color */
+    background-color: #fff;
+    color: #000;
 }
 
 /* Header Styling */
 header {
-    background-color: #000; /* Black background for the header */
+    background-color: #000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -17,35 +17,71 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 .school-logo {
-    max-width: 700px;
+    max-width: 150px; /* Smaller logo for mobile */
     height: auto;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .nsf-logo {
-    max-width: 100px; /* Set the max width for the NSF logo */
+    max-width: 50px; /* Smaller NSF logo for mobile */
     height: auto;
-    margin-left: 20px; /* Add some spacing between the text and the logo */
-    margin-bottom: 5px; /* Add larger bottom margin */
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 20px; /* Reduce font size for smaller screens */
     color: white;
-    margin: 0 20px; /* Add margin to both sides of the text */
+    margin: 10px 0;
 }
 
+/* Section Styling */
 section {
     margin: 20px;
     padding: 20px;
-    background-color: #f4f4f4; /* Light grey for section background */
+    background-color: #f4f4f4;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .school-logo {
+        max-width: 120px; /* Even smaller logo for very small screens */
+        margin-right: 0;
+    }
+
+    .nsf-logo {
+        max-width: 40px;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 18px; /* Smaller font size on mobile */
+    }
+
+    nav ul.navbar {
+        flex-direction: column; /* Stack navbar items vertically on small screens */
+    }
+
+    nav ul.navbar li {
+        margin: 5px 0; /* Add some space between each item */
+    }
+
+    footer {
+        padding: 20px; /* Increased padding for better mobile appearance */
+    }
 }
 
 #team {
@@ -94,14 +130,14 @@ ul li {
     border-radius: 4px;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #000; /* Black background for the footer */
+    background-color: #000;
     color: white;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 /* Navigation Bar Styling */
@@ -109,30 +145,32 @@ nav ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Match the navbar background with the body */
+    background-color: #fff;
     display: flex;
-    justify-content: space-between; /* Spread items evenly across the width */
+    flex-wrap: wrap; /* Wraps navbar items on small screens */
+    justify-content: space-between;
     width: 100%;
     padding: 0 10px;
-    border-bottom: 1px solid #ddd; /* Optional: add a subtle border to separate the nav from the rest of the page */
+    border-bottom: 1px solid #ddd;
 }
 
 nav ul.navbar li {
     flex-grow: 1;
     text-align: center;
+    margin: 5px 0; /* Adds some margin for better spacing on smaller screens */
 }
 
 nav ul.navbar li a {
     display: block;
-    color: #000; /* Black text */
+    color: #000;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: bold; /* Bold the nav bar text */
+    font-weight: bold;
 }
 
 nav ul.navbar li a:hover {
-    background-color: #f4f4f4; /* Light grey hover effect */
+    background-color: #f4f4f4;
 }
 
 .schedule-image img {
